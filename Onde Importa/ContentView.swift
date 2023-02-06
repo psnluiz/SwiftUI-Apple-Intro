@@ -1,21 +1,28 @@
 import SwiftUI
 
+
 struct ContentView: View {
+    
     var body: some View {
+
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
+            VStack {
+                Image(systemName: "globe")
+                    .imageScale(.large)
                 .foregroundColor(.red)
-            HStack(
-                spacing: 16
-            ) {
                 Text("Turtle Rock")
                     .font(.title)
-                Text("Obrigado deus porme fazer cezar blacker")
-                Text("Mano vamo ser produtivo carai!")
-                    .font(.callout)
-                
+                HStack(
+                    spacing: 16
+                ) {
+                    Text("Obrigado deus por me fazer cezar blacker")
+                    Text("Mano, vamo ser produtivo carai!")
+                        .font(.subheadline)
+                    
+                }
+                .padding(.top, 20)
             }
+            .padding(20)
             
         }
         .padding()
@@ -28,3 +35,6 @@ struct ContentView_Previews: PreviewProvider {
             .previewDevice("iPhone 14")
     }
 }
+
+    
+
