@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B60687702990CEF700005761 /* CircularImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B606876F2990CEF700005761 /* CircularImageView.swift */; };
 		B66B155C298E05C700DFA68C /* Onde_ImportaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66B155B298E05C700DFA68C /* Onde_ImportaApp.swift */; };
 		B66B155E298E05C700DFA68C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66B155D298E05C700DFA68C /* ContentView.swift */; };
 		B66B1560298E05CE00DFA68C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B66B155F298E05CE00DFA68C /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B606876F2990CEF700005761 /* CircularImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularImageView.swift; sourceTree = "<group>"; };
 		B66B1558298E05C700DFA68C /* Onde Importa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Onde Importa.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B66B155B298E05C700DFA68C /* Onde_ImportaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onde_ImportaApp.swift; sourceTree = "<group>"; };
 		B66B155D298E05C700DFA68C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			children = (
 				B66B155B298E05C700DFA68C /* Onde_ImportaApp.swift */,
 				B66B155D298E05C700DFA68C /* ContentView.swift */,
+				B606876F2990CEF700005761 /* CircularImageView.swift */,
 				B66B155F298E05CE00DFA68C /* Assets.xcassets */,
 				B66B1561298E05CE00DFA68C /* Onde_Importa.entitlements */,
 				B66B1562298E05CE00DFA68C /* Preview Content */,
@@ -261,6 +264,7 @@
 			files = (
 				B66B155E298E05C700DFA68C /* ContentView.swift in Sources */,
 				B66B155C298E05C700DFA68C /* Onde_ImportaApp.swift in Sources */,
+				B60687702990CEF700005761 /* CircularImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
