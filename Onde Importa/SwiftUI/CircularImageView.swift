@@ -9,7 +9,9 @@ import SwiftUI
 
 struct CircularImageView: View {
     var body: some View {
-        Image("turtlerock")
+        Image("arsenal2")
+//            .resizable()
+//            .frame(width: 500, height: 500)
             .clipShape(Circle())
             .overlay{
                 Circle().stroke(.white, lineWidth: 4)
