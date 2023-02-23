@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		B60687702990CEF700005761 /* CircularImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B606876F2990CEF700005761 /* CircularImageView.swift */; };
+		B66031722991897300CC9FA1 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66031712991897300CC9FA1 /* MapView.swift */; };
+		B660317429918AD300CC9FA1 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B660317329918AD300CC9FA1 /* LocationManager.swift */; };
+		B66AF02B2993507B009C337A /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = B66AF02A2993507B009C337A /* landmarkData.json */; };
+		B66AF02D2993515B009C337A /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66AF02C2993515B009C337A /* Landmark.swift */; };
+		B66AF0302993583D009C337A /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66AF02F2993583D009C337A /* ModelData.swift */; };
+		B66AF03429935A34009C337A /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66AF03329935A34009C337A /* LandmarkRow.swift */; };
+		B66AF0362993611C009C337A /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66AF0352993611C009C337A /* LandmarkList.swift */; };
 		B66B155C298E05C700DFA68C /* Onde_ImportaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66B155B298E05C700DFA68C /* Onde_ImportaApp.swift */; };
 		B66B155E298E05C700DFA68C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66B155D298E05C700DFA68C /* ContentView.swift */; };
 		B66B1560298E05CE00DFA68C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B66B155F298E05CE00DFA68C /* Assets.xcassets */; };
@@ -36,6 +43,14 @@
 
 /* Begin PBXFileReference section */
 		B606876F2990CEF700005761 /* CircularImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularImageView.swift; sourceTree = "<group>"; };
+		B66031712991897300CC9FA1 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		B660317329918AD300CC9FA1 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		B660317F299203BB00CC9FA1 /* Onde-Importa-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Onde-Importa-Info.plist"; sourceTree = SOURCE_ROOT; };
+		B66AF02A2993507B009C337A /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
+		B66AF02C2993515B009C337A /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
+		B66AF02F2993583D009C337A /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		B66AF03329935A34009C337A /* LandmarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkRow.swift; sourceTree = "<group>"; };
+		B66AF0352993611C009C337A /* LandmarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
 		B66B1558298E05C700DFA68C /* Onde Importa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Onde Importa.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B66B155B298E05C700DFA68C /* Onde_ImportaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onde_ImportaApp.swift; sourceTree = "<group>"; };
 		B66B155D298E05C700DFA68C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -74,6 +89,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B66031792991FB5000CC9FA1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B66B155D298E05C700DFA68C /* ContentView.swift */,
+				B606876F2990CEF700005761 /* CircularImageView.swift */,
+				B66031712991897300CC9FA1 /* MapView.swift */,
+				B66AF03329935A34009C337A /* LandmarkRow.swift */,
+				B66AF0352993611C009C337A /* LandmarkList.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B660317A2991FB6A00CC9FA1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B660317329918AD300CC9FA1 /* LocationManager.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		B660317E299202CE00CC9FA1 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				B66B155F298E05CE00DFA68C /* Assets.xcassets */,
+				B66AF02A2993507B009C337A /* landmarkData.json */,
+				B66B1561298E05CE00DFA68C /* Onde_Importa.entitlements */,
+			);
+			name = Files;
+			sourceTree = "<group>";
+		};
+		B66AF02E29935160009C337A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B66AF02C2993515B009C337A /* Landmark.swift */,
+				B66AF02F2993583D009C337A /* ModelData.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		B66B154F298E05C600DFA68C = {
 			isa = PBXGroup;
 			children = (
@@ -97,11 +151,12 @@
 		B66B155A298E05C700DFA68C /* Onde Importa */ = {
 			isa = PBXGroup;
 			children = (
+				B660317F299203BB00CC9FA1 /* Onde-Importa-Info.plist */,
 				B66B155B298E05C700DFA68C /* Onde_ImportaApp.swift */,
-				B66B155D298E05C700DFA68C /* ContentView.swift */,
-				B606876F2990CEF700005761 /* CircularImageView.swift */,
-				B66B155F298E05CE00DFA68C /* Assets.xcassets */,
-				B66B1561298E05CE00DFA68C /* Onde_Importa.entitlements */,
+				B66031792991FB5000CC9FA1 /* Views */,
+				B66AF02E29935160009C337A /* Model */,
+				B660317A2991FB6A00CC9FA1 /* Utils */,
+				B660317E299202CE00CC9FA1 /* Files */,
 				B66B1562298E05CE00DFA68C /* Preview Content */,
 			);
 			path = "Onde Importa";
@@ -238,6 +293,7 @@
 			files = (
 				B66B1564298E05CE00DFA68C /* Preview Assets.xcassets in Resources */,
 				B66B1560298E05CE00DFA68C /* Assets.xcassets in Resources */,
+				B66AF02B2993507B009C337A /* landmarkData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,9 +318,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B660317429918AD300CC9FA1 /* LocationManager.swift in Sources */,
 				B66B155E298E05C700DFA68C /* ContentView.swift in Sources */,
 				B66B155C298E05C700DFA68C /* Onde_ImportaApp.swift in Sources */,
+				B66031722991897300CC9FA1 /* MapView.swift in Sources */,
+				B66AF0362993611C009C337A /* LandmarkList.swift in Sources */,
 				B60687702990CEF700005761 /* CircularImageView.swift in Sources */,
+				B66AF02D2993515B009C337A /* Landmark.swift in Sources */,
+				B66AF03429935A34009C337A /* LandmarkRow.swift in Sources */,
+				B66AF0302993583D009C337A /* ModelData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +485,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Onde-Importa-Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Need user's location for mapkit";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -442,6 +506,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -461,6 +527,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Onde-Importa-Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Need user's location for mapkit";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -480,6 +548,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
