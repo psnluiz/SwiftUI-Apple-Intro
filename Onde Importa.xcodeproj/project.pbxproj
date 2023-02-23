@@ -22,6 +22,7 @@
 		B66B156E298E05D000DFA68C /* Onde_ImportaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66B156D298E05D000DFA68C /* Onde_ImportaTests.swift */; };
 		B66B1578298E05D000DFA68C /* Onde_ImportaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66B1577298E05D000DFA68C /* Onde_ImportaUITests.swift */; };
 		B66B157A298E05D000DFA68C /* Onde_ImportaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66B1579298E05D000DFA68C /* Onde_ImportaUITestsLaunchTests.swift */; };
+		B6D057E729A811680062782E /* LandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D057E629A811680062782E /* LandmarkDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		B66B1573298E05D000DFA68C /* Onde ImportaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Onde ImportaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B66B1577298E05D000DFA68C /* Onde_ImportaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onde_ImportaUITests.swift; sourceTree = "<group>"; };
 		B66B1579298E05D000DFA68C /* Onde_ImportaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onde_ImportaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B6D057E629A811680062782E /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 				B66031712991897300CC9FA1 /* MapView.swift */,
 				B66AF03329935A34009C337A /* LandmarkRow.swift */,
 				B66AF0352993611C009C337A /* LandmarkList.swift */,
+				B6D057E629A811680062782E /* LandmarkDetail.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 				B60687702990CEF700005761 /* CircularImageView.swift in Sources */,
 				B66AF02D2993515B009C337A /* Landmark.swift in Sources */,
 				B66AF03429935A34009C337A /* LandmarkRow.swift in Sources */,
+				B6D057E729A811680062782E /* LandmarkDetail.swift in Sources */,
 				B66AF0302993583D009C337A /* ModelData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
