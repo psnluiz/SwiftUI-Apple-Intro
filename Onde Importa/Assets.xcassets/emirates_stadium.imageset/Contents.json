@@ -1,11 +1,11 @@
 {
   "images" : [
     {
-      "filename" : "arsenal2.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "emirates_stadium.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },

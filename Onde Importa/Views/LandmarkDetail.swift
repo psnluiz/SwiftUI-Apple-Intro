@@ -8,44 +8,45 @@
 import SwiftUI
 
 struct LandmarkDetail: View {
+    var landmark: Landmark
+
     var body: some View {
-        VStack {
-            MapView()
+        ScrollView {
+            MapView(coordinates: landmark.locationCoordinate)
                 .ignoresSafeArea(edges: .top)
                 .frame(height: 300)
             
-            CircularImageView()
+            CircularImageView(image: landmark.image)
                 .offset(y: -130)
                 .padding(.bottom, -130)
             
             VStack(alignment: .leading) {
-                Text("Emirates Stadium")
+                    Text(landmark.name)
                     .font(.largeTitle)
                 
                 HStack {
-                    Text("Arsenal's Home")
-                        .foregroundColor(.red)
+                    Text(landmark.park)
                     Spacer()
-                    Text("North London ")
+                    Text(landmark.state)
                 }
                 .font(.subheadline)
                 .foregroundColor(.secondary)
                 
                 Divider()
                 
-                Text("Home to the future 22/23 EPL champion!")
+                Text("About \(landmark.name)")
                     .font(.title2)
+                Text(landmark.description)
             }
             .padding()
-            
-            Spacer()
-            
         }
+        .navigationTitle(landmark.name)
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
 struct LandmarkDetail_Previews: PreviewProvider {
     static var previews: some View {
-        LandmarkDetail()
+        LandmarkDetail(landmark: landmarks[0])
     }
 }

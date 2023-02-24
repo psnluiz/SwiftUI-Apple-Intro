@@ -11,8 +11,7 @@ import SwiftUI
 struct Onde_ImportaApp: App {
     var body: some Scene {
         WindowGroup {
-//            ContentView()
-            MapView()
+            ContentView()
         }
     }
 }
