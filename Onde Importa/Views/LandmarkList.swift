@@ -9,23 +9,32 @@ import SwiftUI
 
 struct LandmarkList: View {
     
-    @State private var showFavoritesOnly = true
+    @State private var showFavoritesOnly = false
     
     private var filteredLandmarks : [Landmark] {
-        if showFavoritesOnly {
-            return landmarks.filter { $0.isFavorite == true }
-        } else {
-            return landmarks
+        landmarks.filter { landmark in
+            (!showFavoritesOnly || landmark.isFavorite)
         }
+        
+//        if showFavoritesOnly {
+//            return landmarks.filter { $0.isFavorite == true }
+//        } else {
+//            return landmarks
+//        }
     }
     
     var body: some View {
         NavigationView {
-            List(filteredLandmarks) { landmark in
-                NavigationLink {
-                    LandmarkDetail(landmark: landmark)
-                } label: {
-                    LandmarkRow(landmark: landmark)
+            List {
+                Toggle(isOn: $showFavoritesOnly) {
+                    Text("Favorites Only")
+                }
+                ForEach(filteredLandmarks) { landmark in
+                    NavigationLink {
+                        LandmarkDetail(landmark: landmark)
+                    } label: {
+                        LandmarkRow(landmark: landmark)
+                    }
                 }
             }
         }
