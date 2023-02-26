@@ -29,7 +29,7 @@ struct LandmarkRow_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             LandmarkRow(landmark: landmarks[0])
-            LandmarkRow(landmark: landmarks[1])
+            LandmarkRow(landmark: landmarks[2])
         }
         .previewLayout(.fixed(width: 300, height: 70))
     }
